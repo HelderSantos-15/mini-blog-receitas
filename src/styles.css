@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fef6f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #ff6f61;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  color: #ff6f61;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h2, h3 {
+  color: #333;
+}
+
+.home, .receita, .sobre {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+form.form-receita input, form.form-receita textarea {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form.form-receita button.btn-add {
+  background: #28a745;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+form.form-receita button.btn-add:hover {
+  background: #218838;
+}
+
+button.btn-fav {
+  background: #ffc107;
+  border: none;
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+button.btn-fav.ativo {
+  background: #fd7e14;
+  color: white;
+}
+
+button.btn-fav:hover {
+  opacity: 0.8;
+}
+
+.btn-voltar {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.btn-voltar:hover {
+  background: #0069d9;
+}
