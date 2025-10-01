@@ -1,17 +1,42 @@
-# React + Vite
+# 🍲 Mini-Blog de Receitas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um mini-blog feito em **React + Vite**, utilizando **React Router DOM** para navegação entre páginas.  
+O projeto foi desenvolvido como exemplo de estudo e prática de **rotas em React**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Funcionalidades
 
-## React Compiler
+- 🌐 Navegação entre páginas com **React Router**
+- 🎨 Estilização com **CSS modular**
+- 📚 Páginas:
+  - **Home** → página inicial do blog  
+  - **Sobre** → informações sobre o projeto  
+  - **Receitas** → lista de receitas com cartões bonitos  
+  - **Contato** → informações de contato  
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🖼️ Demonstração das Telas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# mini-blog-receitas
+### 🏠 Home
+![Home](https://via.placeholder.com/600x300?text=Home+Mini-Blog)
+
+### 📖 Sobre
+![Sobre](https://via.placeholder.com/600x300?text=Sobre+Mini-Blog)
+
+### 🍕 Receitas
+![Receitas](https://via.placeholder.com/600x300?text=Receitas+Mini-Blog)
+
+### 📩 Contato
+![Contato](https://via.placeholder.com/600x300?text=Contato+Mini-Blog)
+
+*(troque essas imagens por prints reais do seu projeto depois)*
+
+---
+
+## 🚀 Como rodar o projeto
+
+### 1. Clonar o repositório
+```bash
+git clone https://github.com/seu-usuario/mini-blog-receitas.git
