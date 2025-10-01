@@ -40,3 +40,27 @@ O projeto foi desenvolvido como exemplo de estudo e prática de **rotas em React
 ### 1. Clonar o repositório
 ```bash
 git clone https://github.com/seu-usuario/mini-blog-receitas.git
+
+
+2. Entrar na pasta do projeto
+cd mini-blog-receitas
+
+3. Instalar dependências
+npm install
+
+4. Rodar o projeto
+npm run dev
+
+
+O projeto abrirá em:
+👉 http://localhost:5173/
+
+🛠️ Tecnologias usadas
+
+React
+
+Vite
+
+React Router DOM
+
+CSS3
