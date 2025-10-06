@@ -29,7 +29,7 @@ O projeto foi desenvolvido como exemplo de estudo e prática de **rotas em React
 ![Receitas](https://via.placeholder.com/600x300?text=Receitas+Mini-Blog)
 
 ### Favoritos
-![Contato](https://via.placeholder.com/600x300?text=Favoritos+Mini-Blog)
+![Favoritos](https://via.placeholder.com/600x300?text=Favoritos+Mini-Blog)
 
 
 ---
