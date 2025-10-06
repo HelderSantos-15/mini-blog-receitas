@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Receita from "./pages/Receita";
@@ -8,29 +8,40 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 function App() {
-  const [receitas, setReceitas] = useState([
-    {
-      id: 1,
-      nome: "Bolo de Chocolate",
-      ingredientes: ["Chocolate", "Farinha", "Ovos"],
-      preparo: "Misture tudo e asse.",
-      favorito: false,
-    },
-    {
-      id: 2,
-      nome: "Macarrão ao Molho",
-      ingredientes: ["Macarrão", "Molho de tomate"],
-      preparo: "Cozinhe o macarrão e adicione o molho.",
-      favorito: false,
-    },
-    {
-      id: 3,
-      nome: "Salada Colorida",
-      ingredientes: ["Alface", "Tomate", "Cenoura"],
-      preparo: "Misture todos os ingredientes.",
-      favorito: false,
-    },
-  ]);
+  // Carregar receitas do localStorage ou usar padrão
+  const [receitas, setReceitas] = useState(() => {
+    const receitasSalvas = localStorage.getItem("receitas");
+    return receitasSalvas
+      ? JSON.parse(receitasSalvas)
+      : [
+          {
+            id: 1,
+            nome: "Bolo de Chocolate",
+            ingredientes: ["Chocolate", "Farinha", "Ovos"],
+            preparo: "Misture tudo e asse.",
+            favorito: false,
+          },
+          {
+            id: 2,
+            nome: "Macarrão ao Molho",
+            ingredientes: ["Macarrão", "Molho de tomate"],
+            preparo: "Cozinhe o macarrão e adicione o molho.",
+            favorito: false,
+          },
+          {
+            id: 3,
+            nome: "Salada Colorida",
+            ingredientes: ["Alface", "Tomate", "Cenoura"],
+            preparo: "Misture todos os ingredientes.",
+            favorito: false,
+          },
+        ];
+  });
+
+  // Salvar receitas no localStorage sempre que mudarem
+  useEffect(() => {
+    localStorage.setItem("receitas", JSON.stringify(receitas));
+  }, [receitas]);
 
   return (
     <div className="app">
