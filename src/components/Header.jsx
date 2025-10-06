@@ -7,6 +7,7 @@ function Header() {
       <h1>Mini Blog de Receitas</h1>
       <nav>
         <Link to="/">Home</Link>
+        <Link to="/favoritos">Favoritos</Link>
         <Link to="/sobre">Sobre</Link>
       </nav>
     </header>

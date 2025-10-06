@@ -1,40 +1,63 @@
+/* ===== Estilos Gerais ===== */
 body {
-  font-family: Arial, sans-serif;
-  background: #fef6f0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #f9f1ff,
+    #e0f7fa
+  ); /* lilás + azul claro */
   margin: 0;
   padding: 0;
+  color: #1a1a1a;
 }
 
+h2,
+h3 {
+  color: #4a148c; /* roxo forte */
+}
+
+/* ===== Header ===== */
 header {
-  background: #ff6f61;
+  background: linear-gradient(
+    90deg,
+    #8e2de2,
+    #4a00e0
+  ); /* roxo + lilás intenso */
   color: white;
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-bottom: 3px solid #4a148c;
 }
 
 header nav a {
   color: white;
   margin: 0 1rem;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 header nav a:hover {
+  color: #ffeb3b; /* amarelo vivo */
   text-decoration: underline;
 }
 
+/* ===== Main ===== */
 main {
   padding: 2rem;
 }
 
+/* ===== Footer ===== */
 footer {
-  background: #333;
-  color: white;
+  background: linear-gradient(90deg, #4a148c, #8e2de2);
+  color: #fff;
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem;
   margin-top: 2rem;
+  font-size: 0.95rem;
 }
 
+/* ===== Listas ===== */
 ul {
   list-style: none;
   padding: 0;
@@ -48,79 +71,116 @@ li {
 }
 
 a {
-  color: #ff6f61;
+  color: #ff6f61; /* coral */
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 a:hover {
   text-decoration: underline;
+  color: #00bfa5; /* verde-água */
 }
 
-h2, h3 {
-  color: #333;
-}
-
-.home, .receita, .sobre {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 10px;
-  max-width: 600px;
+/* ===== Boxes de Conteúdo ===== */
+.home,
+.receita,
+.sobre {
+  background: linear-gradient(120deg, #ffffff, #f3f0ff); /* fundo leve lilás */
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 720px;
   margin: 0 auto 2rem auto;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-form.form-receita input, form.form-receita textarea {
+.home:hover,
+.receita:hover,
+.sobre:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Formulários ===== */
+form.form-receita input,
+form.form-receita textarea {
   display: block;
   width: 100%;
   margin: 0.5rem 0;
-  padding: 0.5rem;
-  border-radius: 6px;
+  padding: 0.7rem;
+  border-radius: 12px;
   border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.2s ease;
 }
 
-form.form-receita button.btn-add {
-  background: #28a745;
-  color: white;
-  padding: 0.6rem 1rem;
-  border: none;
-  border-radius: 6px;
+form.form-receita input:focus,
+form.form-receita textarea:focus {
+  border-color: #8e2de2;
+  outline: none;
+  box-shadow: 0 0 8px rgba(142, 45, 226, 0.3);
+}
+
+/* ===== Botões ===== */
+button,
+.btn-voltar,
+form.form-receita button {
+  font-family: inherit;
+  font-weight: 600;
   cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+}
+
+/* Botão Adicionar Receita */
+form.form-receita button.btn-add {
+  background: linear-gradient(90deg, #ff6f61, #ffb74d); /* coral + laranja */
+  color: white;
+  padding: 0.7rem 1.8rem;
   margin-top: 0.5rem;
+  font-size: 1rem;
+  box-shadow: 0 5px 15px rgba(255, 111, 97, 0.4);
 }
 
 form.form-receita button.btn-add:hover {
-  background: #218838;
+  background: linear-gradient(90deg, #ff3d00, #ff9800);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(255, 61, 0, 0.5);
 }
 
+/* Botão Favorito */
 button.btn-fav {
-  background: #ffc107;
-  border: none;
-  border-radius: 6px;
-  padding: 0.3rem 0.6rem;
-  cursor: pointer;
+  display: inline-block;
+  background: #ffe082; /* amarelo claro */
+  color: #ff6f61; /* coral */
+  padding: 0.4rem 0.9rem;
   margin-left: 1rem;
+  font-size: 0.95rem;
 }
 
 button.btn-fav.ativo {
-  background: #fd7e14;
+  background: linear-gradient(90deg, #ff6f61, #ffca28); /* coral + dourado */
   color: white;
 }
 
 button.btn-fav:hover {
-  opacity: 0.8;
+  opacity: 0.85;
+  transform: translateY(-1px);
 }
 
+/* Botão Voltar */
 .btn-voltar {
   display: inline-block;
-  margin-top: 1rem;
-  background: #007bff;
+  background: linear-gradient(90deg, #4dd0e1, #00bfa5); /* azul + verde-água */
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 15px;
   text-decoration: none;
-  border-radius: 6px;
 }
 
 .btn-voltar:hover {
-  background: #0069d9;
+  background: linear-gradient(90deg, #00acc1, #00bfa5);
+  transform: translateY(-2px);
 }

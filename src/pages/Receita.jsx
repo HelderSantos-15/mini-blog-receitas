@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 
 function Receita({ receitas }) {
   const { id } = useParams();
-  const receita = receitas.find(r => r.id === parseInt(id));
+  const receita = receitas.find((r) => r.id === parseInt(id));
 
   if (!receita) return <p>Receita não encontrada!</p>;
 
@@ -18,7 +18,9 @@ function Receita({ receitas }) {
       </ul>
       <h3>Preparo:</h3>
       <p>{receita.preparo}</p>
-      <Link to="/" className="btn-voltar">Voltar</Link>
+      <Link to="/" className="btn-voltar">
+        Voltar
+      </Link>
     </div>
   );
 }

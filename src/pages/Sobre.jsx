@@ -4,7 +4,11 @@ function Sobre() {
   return (
     <div className="sobre">
       <h2>Sobre o Mini Blog</h2>
-      <p>Este é um mini blog de receitas . Experimente navegar pelas receitas, favoritar e adicionar novas receitas!</p>
+      <p>
+        "No Mini Blog de Receitas, cada prato conta uma história. Descubra,
+        experimente e compartilhe suas criações favoritas. Aqui, cozinhar é
+        diversão, inspiração e sabor em cada clique!"
+      </p>
     </div>
   );
 }
