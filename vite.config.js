@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true,
-    port: 2222,
+    port: 2223,
     allowedHosts: [".csb.app", ".codesandbox.io"],
   },
 });
