@@ -13,7 +13,7 @@ O projeto foi desenvolvido como exemplo de estudo e prática de **rotas em React
   - **Home** → página inicial do blog  
   - **Sobre** → informações sobre o projeto  
   - **Receitas** → lista de receitas com cartões bonitos  
-  - **Contato** → informações de contato  
+  - **Favoritos** → lista as receitas favoritas 
 
 ---
 
@@ -28,10 +28,9 @@ O projeto foi desenvolvido como exemplo de estudo e prática de **rotas em React
 ### 🍕 Receitas
 ![Receitas](https://via.placeholder.com/600x300?text=Receitas+Mini-Blog)
 
-### 📩 Contato
-![Contato](https://via.placeholder.com/600x300?text=Contato+Mini-Blog)
+### Favoritos
+![Contato](https://via.placeholder.com/600x300?text=Favoritos+Mini-Blog)
 
-*(troque essas imagens por prints reais do seu projeto depois)*
 
 ---
 
